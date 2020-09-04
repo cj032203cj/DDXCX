@@ -1,0 +1,35 @@
+<view>
+  <view class="top-views">
+    <view class="my-logo">
+      <image src="{{imgStr3}}{{pic}}" class="logo-pic"></image>
+      <view class="my-name">联小友</view>
+    </view>
+    <view class="order-box">
+        <user-row info="{{info}}" extral_width="the_width" ontap="see_more"></user-row>
+        <view class="disFlex">
+          <view a:for="{{center}}" class="width_25">
+            <image class="imgSize" src="{{imgStr3}}{{item.pic}}"></image>
+            <view class="name">{{item.name}}</view>
+          </view>
+        </view>
+    </view>
+    <view class="apply-box">
+      <user-row info="{{info_2}}" extral_width="the_width" ontap="see_more"></user-row>
+      <view class="disFlex">
+        <view a:for="{{apply}}" class="width_25">
+          <image class="imgSize" src="{{imgStr3}}{{item.pic}}"></image>
+          <view class="name">{{item.name}}</view>
+        </view>
+      </view>
+    </view>
+    <view class="others-box">
+      <view class="disFlex">
+          <view a:for="{{others}}" class="width_25">
+            <image class="imgSize" src="{{imgStr3}}{{item.pic}}"></image>
+            <view class="name">{{item.name}}</view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,56 @@
+<!--pages/info_row/info_row.wxml-->
+
+<view class="info_row {{info.bBorder?'bBorder':''}}">
+  <view class="text_name extral_width">{{info.name}}</view>
+  <block a:if="{{info.picker==true}}">
+    <block a:if="{{info.selector=='selector'}}">
+      <picker mode="selector" class="picker_box" bindchange="bindPickerFn" value="{{info.index}}"
+              range="{{info.value}}">
+        <view class="disFlex picker chs_btn">
+          <block a:if="{{info.index==-1}}">
+            <view class="text_chose">{{info.valueName}}</view>
+          </block>
+          <block a:else>
+            <view class="text_chose">{{info.value[info.index]}}</view>
+          </block>
+          <icon class="iconfont liebiao_gengduo"></icon>
+        </view>
+      </picker>
+    </block>
+    <block a:elif="{{info.selector=='date'}}">
+      <!--<picker mode="date" class="picker_box" bindchange="bindPickerFn" value="{{info.value}}" start="1940-09-01"-->
+              <!--end="2029-09-01">-->
+        <!--<view class="disFlex picker chs_btn">-->
+          <!--<block a:if="{{info.value==''}}">-->
+            <!--<view class="text_chose">{{info.valueName}}</view>-->
+          <!--</block>-->
+          <!--<block a:else>-->
+            <!--<view class="text_chose">{{info.value}}</view>-->
+          <!--</block>-->
+          <!--<icon class="iconfont liebiao_gengduo"></icon>-->
+        <!--</view>-->
+      <!--</picker>-->
+    </block>
+    <block a:elif="{{info.selector=='dateDime'&&info.cant_click==false}}">
+      <!--<picker mode="multiSelector" class="picker_box" bindchange="bindMultiPickerChange"-->
+              <!--bindcolumnchange="bindMultiPickerColumnChange" value="{{multiIndex}}" range="{{multiArray}}">-->
+        <!--<view class="disFlex picker chs_btn">-->
+          <!--<block a:if="{{info.value==''}}">-->
+            <!--<view class="text_chose">{{info.valueName}}</view>-->
+          <!--</block>-->
+          <!--<block a:else>-->
+            <!--<view class="text_chose">{{info.value}}</view>-->
+          <!--</block>-->
+          <!--<icon class="iconfont liebiao_gengduo {{info.other_icon!=true?'':'date'}}"></icon>-->
+        <!--</view>-->
+      <!--</picker>-->
+    </block>
+  </block>
+  <block a:else>
+    <view class="disFlex">
+      <view class="wid exclass {{info.no_show_more!=true?'':'mg_r app_money_color'}}">{{info.value}}</view>
+      <icon class="iconfont see-more {{info.other_icon!=true?'':'date'}}"
+            a:if="{{info.no_show_more!=true}}"></icon>
+    </view>
+  </block>
+</view>

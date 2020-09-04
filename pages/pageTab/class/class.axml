@@ -1,0 +1,37 @@
+<view>
+  <view class="disFlex search-box">
+    <view class="input-search">
+      <view class="search-content">
+        <icon type="search" size="12" color="#fff"></icon>
+        <input maxlength="10" placeholder="输入商品关键词搜索" />
+      </view>
+    </view>
+  </view>
+  <view class="class-box disFlex">
+    <view class="classFList">
+      <view a:for="{{4}}" class="classFName {{index==2?'active':''}}">
+        <view a:if="{{index==2}}" class="activeBorder bg-color"></view>
+        <view>安防</view>
+      </view>
+    </view>
+    <view class="flBox">
+      <view class="disFlex classSLiBox">
+        <view class="liBox {{showMore?'showMore':''}}">
+          <view class="classSLi {{index==2?'border-color font-color':''}}" a:for="{{6}}">全部{{index}}</view>
+        </view>
+        <view class="dropBtn" onTap="showMore1">
+          <image src="{{imgStr3}}drop.png" />
+        </view>
+      </view>
+      <view class="classTList" a:for="{{3}}">
+        <view class="classTTtile">瞬干胶</view>
+        <view class="disFlex flexBox">
+          <view class="classTbox" a:for="{{background}}">
+            <image src="{{imgStr3}}{{item}}" class="classTGoods"></image>
+            <view class="classTText">瞬干胶</view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

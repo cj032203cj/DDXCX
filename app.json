@@ -1,0 +1,50 @@
+{
+  "pages": [
+    "pages/pageTab/index/index",
+    "pages/pageTab/class/class",
+    "pages/pageTab/cart/cart",
+    "pages/pageTab/userCenter/userCenter"
+  
+  ],
+  "window": {
+    "enableWK": "YES",
+    "enableDSL": true,
+    "defaultTitle": "3SM采购平台",
+    "backgroundColor": "#F5F5F9",
+    "titleBarColor": "#c90028",
+    "pullRefresh": false,
+    "allowsBounceVertical": true
+  },
+  "tabBar": {
+    "textColor": "#404040",
+    "selectedColor": "#C90028",
+    "backgroundColor": "#fff",
+    "items": [
+       {
+        "pagePath": "pages/pageTab/index/index",
+        "name": "首页",
+        "icon":"assets/img/index.png",
+        "activeIcon":"assets/img/index-s.png"
+      },
+      {
+        "pagePath": "pages/pageTab/class/class",
+        "name": "分类",
+        "icon":"assets/img/leibie.png",
+        "activeIcon":"assets/img/leibie-s.png"
+      },
+      {
+        "pagePath": "pages/pageTab/cart/cart",
+        "name": "购物车",
+        "icon":"assets/img/shop.png",
+        "activeIcon":"assets/img/shop-s.png"
+      },
+       {
+        "pagePath": "pages/pageTab/userCenter/userCenter",
+        "name": "个人中心",
+        "icon":"assets/img/my.png",
+        "activeIcon":"assets/img/my-s.png"
+      }
+    ]
+  },
+  "debug": true
+}

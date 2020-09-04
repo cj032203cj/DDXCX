@@ -1,0 +1,35 @@
+<view>
+  <view class="">
+
+  </view>
+  <view class="cart_account">
+    <view class="account_li li_1">
+      <block a:if="{{edit_state}}">
+        <view class="chs_all_box" onTap="chose_all">
+          <block a:if="{{chose_all}}">
+            <image src="{{imgStr3}}box_selected.png" class="ch_all_btn" alt=""></image>
+          </block>
+          <block a:else>
+            <image src="{{imgStr3}}box_unselected.png" class="ch_all_btn" alt=""></image>
+          </block>
+          <view class="chs_all_text">全选</view>
+        </view>
+      </block>
+
+    </view>
+    <view class="account_li li_2">
+      <view class="money_box">
+        <text class="font_24">合计：</text>
+        <text class="font_24 money-color">￥ {{totalPrice}}</text>
+      </view>
+    </view>
+    <view class="account_li li_3">
+      <block a:if="{{edit_state}}">
+        <button class="bg-color" onTap="toFirmOrder">去申请</button>
+      </block>
+      <block a:else>
+        <button class="bg-color app_btn_color_red" onTap="del_cart">删除</button>
+      </block>
+    </view>
+  </view>
+</view>

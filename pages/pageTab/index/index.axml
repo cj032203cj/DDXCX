@@ -1,0 +1,61 @@
+<view>
+    <view class="white-bg">
+        <view class="top-views">
+            <view class="disFlex search-box">
+                <view class="input-search">
+                    <view class="search-content">
+                        <image src="{{imgStr3}}search.png" class="search-img"></image>
+                        <input maxlength="10" placeholder="输入商品关键词搜索" />
+                    </view>
+                </view>
+            </view>
+            <view class="rotate">
+                <swiper class="rotate-swiper"
+                        indicator-dots="{{indicatorDots}}"
+                        autoplay="{{autoplay}}"
+                        interval="{{interval}}"
+                >
+                    <block a:for="{{background}}">
+                        <swiper-item class="swiper-item">
+                            <view class="swiper-item">
+                                <image src="{{imgStr3}}{{item}}" />
+                            </view>
+                        </swiper-item>
+                    </block>
+                </swiper>
+            </view>
+        </view>
+        <view class="tags-view">
+            <view a:for="{{tagArray}}" class="tags-box">
+                <image mode="aspectFit" class="pic-tags" src="{{imgStr3}}{{item.pic}}"/>
+                <view>{{item.name}}</view>
+            </view>
+        </view>
+    </view>
+    <view class="goods-list white-bg"  a:for="{{1}}">
+        <view class="goods-list-title disFlex">
+            <view class="disFlex">
+                <image mode="aspectFit" class="icon-pic mr10" src="{{imgStr3}}titleFirst.png"/>
+                <view class="font-bold">劳保专区</view>
+            </view>
+            <view class="disFlex">
+                <view>更多</view>
+                <image mode="aspectFit" class="icon-pic" src="{{imgStr3}}showMore.png"/>
+            </view>
+        </view>
+        <view class="goods-box disFlex">
+            <view a:for="{{background}}" class="mg-btm48 {{index%2==0?'has-mg-right':''}}">
+                <image src="{{imgStr3}}{{item}}" class="goods-image"></image>
+                <view class="disFlex">
+                    <view class="goods-info-text">
+                        <view>劳保帽子</view>
+                        <view class="money-color">￥89.00</view>
+                    </view>
+                   <image src="{{imgStr3}}cart.png" class="cart-image">购物车</image>
+                </view>
+
+            </view>
+        </view>
+
+    </view>
+</view>

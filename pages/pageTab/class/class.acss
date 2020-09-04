@@ -1,0 +1,134 @@
+page{
+    background-color: #fff;
+}
+.search-box{
+    justify-content: center;
+}
+.input-search {
+    width: 354rpx;
+    height: 60rpx;
+    background: #F8F8F8;
+    border-radius: 60rpx;
+    margin-top: 30rpx;
+    margin-bottom: 30rpx;
+}
+.search-content input{
+    margin-left: 20rpx;
+    height: 40rpx;
+    width: 280rpx;
+    color: ##fff;
+    font-size: 24rpx;
+    background: none;
+    padding: 0;
+}
+.search-content{
+    height: 40rpx;
+    margin-top: 10rpx;
+    margin-left: 20rpx;
+    overflow: hidden;
+    line-height: 40rpx;
+}
+.classFList{
+    width: 182rpx;
+
+}
+.classFName{
+    width: 182rpx;
+    height: 90rpx;
+    line-height: 90rpx;
+    font-size: 26rpx;
+    text-align: center;
+    color: #666;
+    position: relative;
+    background: #F8F8F8;
+}
+.classFName.active{
+    background: #fff;
+    color: #000;
+    font-size: 30rpx;
+    font-weight: bold;
+}
+.activeBorder{
+    position: absolute;
+    top: 30rpx;
+    left: 0;
+    height: 30rpx;
+    width: 8rpx;
+}
+.classSLiBox{
+    width: 522rpx;
+    margin: 0 23rpx 20rpx;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.liBox{
+    width: 440rpx;
+    overflow: hidden;
+    height: 72rpx;
+}
+.liBox.showMore{
+    height: auto;
+}
+
+.classSLi{
+    float: left;
+    background: #FFFDFD;
+    border: 4rpx solid #9F9F9F;
+    border-radius: 8rpx;
+    margin-bottom: 16rpx;
+    padding: 16rpx 16rpx;
+    font-size: 20rpx;
+    color: #9F9F9F;
+    margin-right: 16rpx;
+    border-radius: 8rpx;
+}
+
+.classSLi.active{
+    border: 4rpx solid #FFFDFD ;
+}
+.dropBtn{
+    height: 72rpx;
+}
+.dropBtn image{
+    width: 28rpx;
+    height: 20rpx;
+    margin-top: 16rpx;
+    margin-right: 16rpx;
+}
+.classTList{
+    width: 522rpx;
+    overflow: hidden;
+    margin: 0 23rpx;
+    box-shadow: 0 0 44rpx 0 rgba(0,0,0,0.03);
+    border-radius: 8rpx;
+    margin-bottom: 20rpx;
+}
+.classTTtile{
+    font-size: 24rpx;
+    height: 34rpx;
+    line-height: 34rpx;
+    margin: 30rpx 0 ;
+    margin-left: 24rpx;
+}
+.classTbox{
+    width: 174rpx;
+}
+.flexBox{
+    width: 522rpx;
+    flex-wrap: wrap;
+}
+.classTText{
+    width: 128rpx;
+    margin: 20rpx  23rpx 0;
+    font-size: 22rpx;
+    margin-bottom: 22rpx;
+    text-align: center;
+}
+.classTGoods{
+    width: 128rpx;
+    height: 128rpx;
+    margin: 0  23rpx;
+}
+.flBox{
+
+}

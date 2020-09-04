@@ -1,0 +1,6 @@
+{
+  "background": "#F8F8F8",
+  "usingComponents": {
+    "user-row": "../../component/inforow/inforow"
+  }
+}

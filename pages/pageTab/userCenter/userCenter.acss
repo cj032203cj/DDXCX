@@ -1,0 +1,62 @@
+.top-views {
+    height: 426rpx;
+    width: 100%;
+    background: url(../../../assets/img/bg.png) left top no-repeat;
+    background-size: cover;
+    position: relative;
+    padding-top: 40rpx;
+}
+.order-box,.apply-box,.others-box{
+    width: 686rpx;
+    margin: 20rpx auto;
+    border-radius: 8rpx;
+    background: #fff;
+}
+.order-box{
+    margin-top: 48rpx;
+}
+.order-box .width_25,.apply-box .width_25{
+    width: 25%;
+    text-align: center;
+}
+.order-box .name,.apply-box .name{
+    font-size: 22rpx;
+    height: 32rpx;
+    line-height: 32rpx;
+    margin-bottom: 32rpx;
+}
+.order-box .imgSize,.apply-box .imgSize{
+    width: 44rpx;
+    height: 42rpx;
+    margin: 36rpx 0 10rpx;
+}
+.my-logo{
+    width: 112rpx;
+    text-align: center;
+    margin: 0rpx auto;
+}
+.logo-pic{
+    width: 112rpx;
+    height: 112rpx;
+    border-radius: 50%;
+}
+.my-name{
+    font-size: 32rpx;
+    color: #fff;
+    margin-top: 10rpx;
+}
+.others-box .width_25{
+    width: 25%;
+    text-align: center;
+}
+.others-box .imgSize{
+    width: 52rpx;
+    height: 52rpx;
+    margin: 56rpx 0 10rpx;
+}
+.others-box .name{
+    font-size: 22rpx;
+    height: 32rpx;
+    line-height: 32rpx;
+    margin-bottom: 32rpx;
+}

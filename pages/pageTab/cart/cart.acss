@@ -1,0 +1,56 @@
+.cart_account{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 108rpx;
+    background: #fff;
+    z-index: 200;
+    display: flex;
+}
+.account_li{
+    height: 108rpx;
+    text-align: center;
+}
+.li_1{
+    width: 220rpx;
+}
+.li_2{
+    width: 284rpx;
+}
+.li_3{
+    width: 246rpx;
+}
+.li_3 .bg-color{
+    color: #fff;
+    font-size: 28rpx;
+    margin-right: 32rpx;
+    height: 80rpx;
+    width: 216rpx;
+    text-align: center;
+    line-height: 80rpx;
+    border-radius: 80rpx;
+    margin-top: 14rpx;
+}
+.money_box{
+    height: 108rpx;
+    line-height: 108rpx;
+}
+.chs_all_box{
+    display: flex;
+    font-size: 30rpx;
+    width: 130rpx;
+    margin-left: 45rpx;
+}
+.chs_all_box image{
+    margin-top: 39rpx;
+    width: 30rpx;
+    height: 30rpx;
+}
+.chs_all_text{
+    height: 30rpx;
+    line-height: 30rpx;
+    padding-top: 39rpx;
+    margin-left: 10rpx;
+    font-size: 24rpx;
+}
